@@ -102,7 +102,6 @@ const createProjectCard = (project) => {
            <button><a href="${
              project.links.code
            }" target="_blank">Code</a></button>
-            
           </div>
         </div>
       `;
@@ -112,10 +111,21 @@ const createProjectCard = (project) => {
 projectBtns.addEventListener("click", (e) => {
   let tech = e.target.innerText;
   smallProjectsGrid.innerHTML = "";
+  bigProjectsGrid.innerHTML = "";
   (tech.includes("JavaScript") ? projects : reactProjects).forEach(
     (project) => {
       createCard(project);
     }
   );
-  bigReactProjects.forEach((project) => createProjectCard(project));
+  if (tech.includes("React")) {
+    bigReactProjects.forEach((project) => createProjectCard(project));
+  }
 });
+
+const allProjects = () => {
+  projects.forEach((project) => createCard(project));
+  reactProjects.forEach((project) => createCard(project));
+  bigReactProjects.forEach((project) => createProjectCard(project));
+};
+
+allProjects();
