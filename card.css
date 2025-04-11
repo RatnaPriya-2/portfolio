@@ -1,0 +1,105 @@
+.big-project-container {
+  display: flex;
+  flex-direction: column; /* Stack image and info vertically by default */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.big-project-image {
+  min-width: 100%; /* Image takes full width */
+  height: auto;
+  object-fit: cover;
+}
+
+.big-project-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.big-project-title {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.big-project-description {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.big-project-features {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.big-project-features li {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tech-stack img{
+  box-shadow:0px 0px 5px black;
+}
+
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.big-project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.big-project-links button {
+  padding: 0px;
+  height: 28px;
+  width: 100px;
+  font-size: 12px;
+  box-shadow: none;
+  font-weight: 500;
+  margin-right: 10px;
+  background-color: #475469;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .big-project-container {
+    flex-direction: column; /* Image on the left, info on the right */
+  }
+
+  .big-project-image {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .big-project-links a {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+}
