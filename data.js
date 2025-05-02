@@ -155,6 +155,18 @@ export const reactProjects = [
       code: "https://github.com/RatnaPriya-2/cocktaildb",
     },
   },
+  {
+    id: 5,
+    image: "./assets/shopee.png",
+    title: "Shopee Clone",
+    description:
+      "A mini e-commerce interface displaying products from a dummy JSON. Users can add to cart or wishlist, adjust quantities, and remove items.",
+    techStack: ["./assets/react.png", "./assets/css-3.png"],
+    links: {
+      liveDemo: "https://shopee-clone.netlify.app/",
+      code: "https://github.com/RatnaPriya-2/shopee-clone",
+    },
+  },
 ];
 
 export const bigReactProjects = [
@@ -208,13 +220,12 @@ export const bigReactProjects = [
     description:
       "A fully responsive Netflix-inspired movie streaming interface using React, featuring TMDB integration for real-time content browsing.",
     features: [
-      "Sign Up and SIgn In feature using Firebase and Firestore",
+      "Sign Up and Sign In feature using Firebase and Firestore",
       "User-friendly movie and TV show browsing",
       "Dynamic movie data fetched from TMDB API",
       "Language-based and Genre based movie filtering",
       "Watch page with trailer support",
       "Responsive design for all screen sizes",
-      "Reusable components and clean code structure",
     ],
     techStack: [
       "./assets/react.png",
@@ -235,6 +246,32 @@ export const bigReactProjects = [
       ],
       styling: ["CSS", "Responsive Design", "Media Queries"],
       authentication: ["Firebase", "Firestore"],
+    },
+  },
+  {
+    id: 3,
+    name: "YouTube-Clone",
+    image: "./assets/youtube.png",
+    title: "YouTube Clone - Video Streaming App",
+    description:
+      "A responsive YouTube-inspired video streaming web app built with React, using the YouTube Data API for real-time video content, search, and category-based filtering.",
+    features: [
+      "Browse trending and popular videos by category using YouTube Data API",
+      "Search functionality with dynamic video listing",
+      "Video watch page with full details and statistics",
+      "Sidebar navigation with collapsible categories",
+      "Responsive UI with Tailwind CSS utility classes",
+      "State management using React Context API",
+    ],
+    techStack: ["./assets/react.png", "./assets/tailwind.png"],
+    links: {
+      liveDemo: "https://yt-clone-2.netlify.app/",
+      code: "https://github.com/RatnaPriya-2/youtube-clone",
+    },
+    technologies: {
+      frontend: ["React", "React Router", "Context API", "Axios"],
+      styling: ["Tailwind CSS", "Responsive Design", "Utility-first Styling"],
+      api: ["YouTube Data API v3"],
     },
   },
 ];

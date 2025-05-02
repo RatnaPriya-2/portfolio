@@ -39,7 +39,7 @@
   min-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 40px;
   position: fixed;
   top: 0;
@@ -54,6 +54,8 @@
   font-size: 30px;
   font-weight: 500;
   display: none;
+  flex: 1;
+  text-align: center;
 }
 
 .left-section .close-btn {
@@ -65,6 +67,7 @@
 
 .left-section .logo {
   text-align: center;
+  margin-left: -20px;
   margin: 20px;
   padding: 15px;
   font-size: 32px;
@@ -216,7 +219,8 @@ button:nth-of-type(1) {
   font-weight: 500;
   padding: 40px 0px;
   max-height: 100vh;
-  overflow: auto;
+  max-width: 90%;
+
   width: 100%;
 }
 
@@ -370,6 +374,10 @@ form {
   display: flex;
   gap: 13px;
 }
+.projects-grid {
+  padding-bottom: 20px;
+}
+
 .project-links button {
   padding: 0px;
   height: 28px;
@@ -388,7 +396,7 @@ form {
   /* padding: 7px 10px; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 821px) {
   .main-container {
     flex-direction: column; /* Stack left and right sections */
   }
@@ -396,11 +404,17 @@ form {
   .hamburger {
     display: block;
   }
+  .hamburger img {
+    width: 22px;
+  }
   .header {
     display: flex;
   }
   .header .logo {
     display: block;
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: -50px;
   }
 
   .left-section {
@@ -429,12 +443,13 @@ form {
 
   .right-section {
     margin-top: 50px;
-    flex: none; /* Reset flex grow */
+    flex-direction: column;
     width: 100%; /* Take full width */
   }
 
   .image img {
     width: 100%; /* Image takes full width */
+    height: 200px;
   }
 
   .projects-container {
@@ -445,13 +460,35 @@ form {
     padding: 0px;
   }
 
+  .content {
+    order: 2;
+  }
+  .content .hello {
+    text-align: center;
+    font-size: 22px;
+  }
+  .content .desc {
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+
+  .content .desc span {
+    font-size: 14px;
+  }
+
+  .buttons-block {
+    display: flex;
+    justify-content: center;
+  }
   .content,
   .about-me,
   .contact-me,
   form,
   .personal-details {
     margin: 20px; /* Adjust margins */
-    padding: 10px;
+    padding: 20px;
     width: 100%; /* Take full width */
   }
 
@@ -474,5 +511,28 @@ form {
   .social-links {
     width: 100%; /* Social links take full width */
     justify-content: space-around;
+  }
+}
+
+@media (min-width: 821px) {
+  .small-projects {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 320px;
+  }
+  .right-section {
+    margin-top: 50px;
+    flex-direction: column;
+    width: 100%; /* Take full width */
+  }
+  .content {
+    order: 2;
+  }
+
+  .personal-details{
+    width:60%;
   }
 }
