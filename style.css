@@ -27,7 +27,7 @@
 .left-section {
   position: relative;
   width: 21%;
-  max-height: 100vh;
+  min-height: 100vh;
   background-color: var(--primary-light-color);
   position: relative;
   border-right: 1px solid rgba(190, 190, 190, 0.278);
@@ -538,7 +538,7 @@ form {
 }
 
 @media (min-width: 1024px) {
-  .content {
-    order: 1;
+  .buttons-block button {
+    margin-bottom: 10px;
   }
 }
