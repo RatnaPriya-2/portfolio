@@ -514,7 +514,7 @@ form {
   }
 }
 
-@media (min-width: 821px) {
+@media (min-width: 821px) and (max-width: 1023px) {
   .small-projects {
     flex-direction: row;
     justify-content: center;
@@ -532,7 +532,13 @@ form {
     order: 2;
   }
 
-  .personal-details{
-    width:60%;
+  .personal-details {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    order: 1;
   }
 }
