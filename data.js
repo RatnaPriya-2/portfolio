@@ -15,7 +15,8 @@ export const projects = [
     id: 2,
     image: "./assets/passwordgenerator.png",
     title: "Password Generator",
-    description: "Generates a strong password.",
+    description:
+      "Create strong, secure, and unique passwords instantly to protect your accounts from threats.",
     techStack: ["./assets/html-5.png", "./assets/css-3.png", "./assets/js.png"],
     links: {
       liveDemo: "https://password2-generator.netlify.app/",
@@ -158,13 +159,13 @@ export const reactProjects = [
   {
     id: 5,
     image: "./assets/shopee.png",
-    title: "Shopee Clone",
+    title: "Shopee",
     description:
       "A mini e-commerce interface displaying products from a dummy JSON. Users can add to cart or wishlist, adjust quantities, and remove items.",
     techStack: ["./assets/react.png", "./assets/css-3.png"],
     links: {
-      liveDemo: "https://shopee-clone.netlify.app/",
-      code: "https://github.com/RatnaPriya-2/shopee-clone",
+      liveDemo: "https://shopee2-redux.netlify.app/",
+      code: "https://github.com/RatnaPriya-2/shopee-redux",
     },
   },
 ];

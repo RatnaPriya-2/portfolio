@@ -46,8 +46,10 @@ const createCard = (project) => {
                   alt=${project.title}
                 /></div>
                 <div class="card-content">
+                  <div class="project-title-description">
                   <h3>${project.title}</h3>
                   <p>${project.description}</p>
+                  </div>
                   <div class="tags">
                     ${project.techStack
                       .map((tech) => `<img src=${tech} alt="tech-icon"/>`)
