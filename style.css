@@ -26,7 +26,6 @@
 }
 .left-section {
   width: 21%;
-
   background-color: var(--primary-light-color);
   position: relative;
   border-right: 1px solid rgba(190, 190, 190, 0.278);
@@ -74,6 +73,7 @@
   padding: 15px;
   font-size: 32px;
   font-weight: 500;
+  text-shadow:0px 0px 2px #f45347;
   border: 1px solid white;
   color: var(--hover-color);
 }
