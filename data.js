@@ -1,4 +1,4 @@
-export const projects = [
+export const jsProjects = [
   {
     id: 1,
     image: "./assets/periodictable.png",
